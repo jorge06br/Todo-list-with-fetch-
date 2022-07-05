@@ -1,12 +1,149 @@
+body{
+    background-color: gray;
+}
+body {
+	font-family: "Roboto", sans-serif;
+}
 
-/* 
+h1.title {
+	text-align: center;
+	color: black;
+	letter-spacing: 2px;
+}
+h1.todo-header {
+	
+	color: white;
+	margin: 20px 0px 30px;
+	padding: 10px 20px;
+	text-transform: uppercase;
+	font-size: 1.5em;
+	font-weight: 400;
+    text-align: center;
+	
+}
+div#h3{
+	background-color: #f7f7f7;
+	padding: 0;
+	margin: 0 auto;
+	height: 2px;
+	width: 492px;
+	border: 1px solid lightgray;
+}
+div#h2{
+	background-color: #f7f7f7;
+	padding: 0;
+	margin: 0 auto;
+	height: 2px;
+	width: 496px;
+	border: 1px solid lightgray;
+}
+div#app{
+    margin: 0;
+    padding: 0;
+}
 
-    You can write your own styles here...
-    
-    
-    ...Or you can use the import command to include 
-    other sylesheets into your bunde as well, e.j:
-    
-    import 'relative/path/to/stylesheet.scss';
+div#mainContainer {
+	width: 500px;
+	margin: 0 auto;
 
-*/
+	background: #f7f7f7;
+	box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+	
+}
+
+ul {
+	cursor: pointer;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+li {
+	background: #fff;
+	border-bottom: 1px solid lightgray;
+	padding-left: 10px;
+	line-height: 2em;
+	margin: 0;
+	color: #666;
+    display: flex;
+    justify-content: space-between;
+	font-size: 30px;
+}
+
+li:nth-child(2n) {
+	background: #f7f7f7;
+}
+li.clicked {
+	color: lightgray;
+	text-decoration: line-through;
+}
+
+input {
+	font-size: 18px;
+	color: #666;
+	background: #f7f7f7;
+	border: 1px solid lightgray;
+	width: 100%;
+	padding: 10px 10px 10px 20px;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-border-box: border-box;
+}
+
+input:focus {
+	background: white;
+	border: 2px solid ;
+	outline: none;
+	transition: 0.1s;
+}
+
+span.fa-trash {
+	padding: 4px;
+    display: none;
+	font-size: 10px;
+}
+
+span {
+	background: tomato;
+	height: 20px;
+	width: 20px ;
+	margin:20px;
+	text-align: center;
+	color: white;
+	display: none;
+   
+}
+
+li:hover span {
+	display: inline-block;
+	
+}
+span:hover .fa-fa-trash{
+    display: inline-block;
+	font-size: 12px;
+}
+h5{
+	padding: 10px;
+	color: lightgrey;
+	font: xx-small ;
+	margin-bottom: 0;
+	border-bottom:1px solid lightgrey;
+}
+
+#btnDiv{
+	text-align: center;
+	margin-top: 10px;
+}
+#newUser:hover{
+	background-color: green;
+	border: 2px solid black;
+}
+#delUser:hover{
+	background-color: red;
+	border: 2px solid black;
+}
+
+button{
+	margin: 5px;
+	border: none;
+}
